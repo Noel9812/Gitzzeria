@@ -94,14 +94,26 @@ npm run dev
 > _A picture speaks a thousand lines of code!_  
 Here are some visuals from **Gitzzeria**:
 
-### 🖥️ Landing Page
+###  Landing Page
 ![Landing Page](Project/SS/Landing.png)
 
-### 📱 Mobile Ordering
-![Mobile Ordering](./screenshots/mobile-ordering.png)
+###  Menu Page
+![Menu Page](Project/SS/Menu.png)
 
-### 📊 Admin Panel
-![Admin Dashboard](./screenshots/admin-dashboard.png)
+###  Admin Panel
+![Admin Dashboard](Project/SS/Admin.png)
+
+###  Placed Order
+![Orders](Project/SS/MyOrder.png)
+
+###  Payment Status
+![Payment Status](Project/SS/Payment.png)
+
+###  Queries Page
+![Queries](Project/SS/QueriesAdmin.png)
+
+###  Support Page
+![Support](Project/SS/Support.png)
 
 
 ---
