@@ -94,8 +94,8 @@ npm run dev
 > _A picture speaks a thousand lines of code!_  
 Here are some visuals from **Gitzzeria**:
 
-### 🖥️ User Interface
-![User Interface](./screenshots/user-interface.png)
+### 🖥️ Landing Page
+![Landing Page](Project/SS/Landing.png)
 
 ### 📱 Mobile Ordering
 ![Mobile Ordering](./screenshots/mobile-ordering.png)
