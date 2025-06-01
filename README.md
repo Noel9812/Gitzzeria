@@ -73,7 +73,7 @@ To run this project locally:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Noel9812/Gitzzeriaa.git
+git clone https://github.com/Noel9812/Gitzzeria.git
 
 # 2. Navigate to the project directory
 cd Project
