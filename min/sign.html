@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://files.oaiusercontent.com/file-rof3kUpO5ZCUOGP1UdaVZyFz');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        .content {
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            color: white;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"], .g-recaptcha {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background: #ffffff;
+            color: #000000;
+        }
+
+        button {
+            width: 100%;
+            background-color: #007BFF;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+    <title>Sign Up - Gitzzeteria</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Sign Up</h1>
+        <form action="/submit-signup" method="post" onsubmit="return validateForm()">
+            <input type="text" id="name" name="name" placeholder="Your name" aria-label="Your name" required autocomplete="name">
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number" aria-label="Your phone number" required autocomplete="tel">
+            <input type="email" id="email" name="email" placeholder="Your email" aria-label="Your email" required autocomplete="email">
+            <input type="password" id="password" name="password" placeholder="Password" aria-label="Password" required autocomplete="new-password">
+            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var phone = document.getElementById('phone').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            if(name === "" || phone === "" || email === "" || password === "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+            if(!/^\+?\d{10,15}$/.test(phone)) {
+                alert("Please enter a valid phone number");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

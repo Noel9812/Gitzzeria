@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        #profile-picture {
+            margin-top: 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid white;
+            /* Placeholder styles for demonstration */
+            background-color: gray;
+            color: white;
+            line-height: 150px; /* Vertically center text */
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #profile-options {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-option {
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .profile-option:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="profile-picture">Add Profile Picture</div>
+    <div id="profile-options">
+        <button class="profile-option">Name: John Doe</button>
+        <button class="profile-option">Email: johndoe@example.com</button>
+        <button class="profile-option">Phone Number: +1234567890</button>
+        <button class="profile-option">Date of Birth: January 1, 1990</button>
+        <button class="profile-option">Password Reset</button>
+        <button class="profile-option">Past Orders</button>
+    </div>
+    <button id="logout">Logout</button>
+</body>
+</html>
