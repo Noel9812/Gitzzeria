@@ -11,12 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-AuthContext.jsx
-firebase.jsx
-ProtectedRoute.jsx
-.firebaserc
-firebase.json
-
+firebase.js
 
 # Editor directories and files
 .vscode/*
