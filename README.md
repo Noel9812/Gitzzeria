@@ -56,8 +56,6 @@ Whether you're grabbing a quick bite between classes or managing the backend ope
 **Backend & Database**  
 - Firebase  
   - Firestore (Database)  
-  - Firebase Auth  
-  - Cloud Functions
 
 **Payments**  
 - Razorpay API
@@ -75,10 +73,10 @@ To run this project locally:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/gitzzeria.git
+git clone https://github.com/Noel9812/Gitzzeriaa.git
 
 # 2. Navigate to the project directory
-cd gitzzeria/Project
+cd Project
 
 # 3. Install dependencies
 npm install
