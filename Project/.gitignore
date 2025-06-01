@@ -12,8 +12,13 @@ dist
 dist-ssr
 *.local
 firebase.js
+AuthContext.jsx
+firebase.jsx
+ProtectedRoute.jsx
+.firebaserc
+firebase.json
+.eslintrc.cjs
 
-# Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
